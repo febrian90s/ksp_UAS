@@ -9,14 +9,28 @@ header("location:login.php");
 } 
 ?>
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Halaman Admin</title>
-</head>
-<body>
-	<h1>Yay! Selamat datang : <?php echo $_SESSION['nama']; ?></h1>
+	<html lang="en">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style...css">
+    <title>Koperasi Simpan Pinjam</title>
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-	<br>
-	<a href="logout.php">Klik disini untuk logout.</a>
+<head>
+<div class="sidebar">
+    <header><i class="fas fa-university"></i>&nbsp;KSP</header>
+    <ul>
+        <li><a href="anggota.php"><i class="fas fa-user"></i>Anggota</a></li>
+        <li><a href="home.php"><i class="fas fa-wallet"></i>Simpanan</a></li>
+        <li><a href="home.php"><i class="fas fa-dollar-sign"></i>Pinjaman</a></li>
+        <li><a href="home.php"><i class="fas fa-cog"></i>Pengaturan</a></li>
+        <li><a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
+    </ul>
+    </div>
+        <div class="content">
+            <h1 align="center">Koperasi Simpan Pinjam</h1>
+            <br><hr align="left" width="100%" height="0,4px" color="white" size="1"><br>
+        </div>
+</head>
+<body>	
 </body>
 </html>
