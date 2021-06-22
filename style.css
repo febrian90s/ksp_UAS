@@ -3,22 +3,22 @@ body {
 	font-size: 0.85em;
 }
 
-menu {
+.menu {
 	display:block;
 	background-color:#1abb30;
 	text-decoration:none;
 	height:46px;
 }
 
-
-content {
+/* 
+.content {
 	clear: both;
 	padding:5px 0;
 	min-height: 200px;
 
-}
+} */
 
-footer {
+.footer {
 	font-size: 10px;
 	bottom: 0;
     width: 100%;
@@ -84,20 +84,20 @@ footer {
 }
 
 .news {
-	background: rgb(104, 96, 96);
+	background: #ddd;
 }
 
 .judul {
 	padding: 4px;
-	border-top: 1px solid rgb(122, 121, 121);
-	border-bottom: 1px solid rgb(143, 101, 101);
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
 	font-weight: bold;
 }
 .sinopsis {
 	padding: 4px;
 	margin-bottom: 5px;
 }
-h1 li a {
-    color: #35a844;
+.h1 li a {
+    color: #1abb30;
 }
 
