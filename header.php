@@ -1,14 +1,3 @@
-<?php 
-//memulai session yang disimpan pada browser
-session_start();
-
-//cek apakah sesuai status sudah login? kalau belum akan kembali ke form login
-if($_SESSION['status']!="sudah_login"){
-//melakukan pengalihan
-header("location:login.php");
-} 
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,13 +21,9 @@ header("location:login.php");
      <nav>
     </ul>
 </div>
-<?php
-// include "header.php";
-?>
-
-
-<!-- include "function.php"; -->
-<!-- <div class="content"> -->
-<?php
-//menampilkan content yang diinginkan
-?>
+<div class="footer "align="center">
+    
+Copyright &copy; kelompok 1
+</div>
+</body>
+</html>
