@@ -8,29 +8,50 @@ if($_SESSION['status']!="sudah_login"){
 header("location:login.php");
 } 
 ?>
+<?php
+include "function.php";
+?>
 <!DOCTYPE html>
-	<html lang="en">
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="style...css">
-    <title>Koperasi Simpan Pinjam</title>
-	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
+<html>
 <head>
-<div class="sidebar">
-    <header><i class="fas fa-university"></i>&nbsp;KSP</header>
-    <ul>
-        <li><a href="anggota.php"><i class="fas fa-user"></i>Anggota</a></li>
-        <li><a href="home.php"><i class="fas fa-wallet"></i>Simpanan</a></li>
-        <li><a href="home.php"><i class="fas fa-dollar-sign"></i>Pinjaman</a></li>
-        <li><a href="home.php"><i class="fas fa-cog"></i>Pengaturan</a></li>
-        <li><a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
-    </ul>
-    </div>
-        <div class="content">
-            <h1 align="center">Koperasi Simpan Pinjam</h1>
-            <br><hr align="left" width="100%" height="0,4px" color="white" size="1"><br>
-        </div>
+	<title>koperasi simpan pinjam</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
-<body>	
+<body>
+
+<h1><a<i class="fas fa-globe"></i>Koperasi Simpan Pinjam</a></h1>
+<hr>
+
+<div class="menu">
+<ul id="navigasi">
+	<li><a href="home.php">HOME</a></li>
+    <li><a href="#">ANGGOTA</a>
+		<ul>
+			<li><a href="home.php?m=tambah_anggota">Tambah Anggota</a></li>
+			<li><a href="home.php?m=list_anggota">Daftar Anggota</a></li>
+		</ul>
+
+	<li><a href="home.php?m=simpan">SIMPAN</a></li>
+	<li><a href="#">PINJAM</a>
+		<ul>
+			<li><a href="home.php?m=pinjaman_baru">Pinjaman Baru</a></li>
+			<li><a href="home.php?m=daftar_pinjaman">Daftar Pinjaman</a></li>
+		</ul>
+    <li><a href="logout.php">LOGOUT</a></li>
+	</li>
+</ul>
+</div>
+<div class="content">
+<?php
+//menampilkan content yang diinginkan
+$file = content($_GET['m']);
+include "page/$file";
+?>
+
+<div class="footer">
+Copyright &copy; 2018 
+</div>
+
 </body>
 </html>
