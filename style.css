@@ -90,7 +90,7 @@ footer {
 .judul {
 	padding: 4px;
 	border-top: 1px solid rgb(122, 121, 121);
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid rgb(143, 101, 101);
 	font-weight: bold;
 }
 .sinopsis {
