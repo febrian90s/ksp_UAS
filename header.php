@@ -13,10 +13,10 @@
 <div class="menu">
     <ul id="navigasi">
         <nav>
-	        <li><a href="beranda.php">HOME</a></li>
-            <li><a href="anggota/tambah_anggota.php">ANGGOTA</a>
-	        <li><a href="simpan/daftar_simpanan.php">SIMPAN</a></li>
-	        <li><a href="pinjaman/daftar_pinjaman.php">PINJAM</a>
+	        <li><a href="../home.php">HOME</a></li>
+            <li><a href="../anggota/anggota.php">ANGGOTA</a>
+	        <li><a href="../simpan/simpanan.php">SIMPAN</a></li>
+	        <li><a href="../pinjaman/pinjaman.php">PINJAM</a>
             <li><a href="logout.php" onclick="return confirm('anda yakin akan keluar?')">LOGOUT</a></li>
      <nav>
     </ul>
